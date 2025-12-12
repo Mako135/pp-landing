@@ -1,0 +1,63 @@
+---
+import HeroJourney from "./hero-journey.astro";
+---
+
+<section class="relative overflow-hidden bg-[#0a1628] pt-40 pb-24">
+  <div class="absolute inset-0 h-full">
+    <div
+      class="absolute top-[-400px] left-1/2 -translate-x-1/2 w-[1900px] h-[1400px] rounded-full opacity-30 blur-[350px]"
+      style="background: radial-gradient(circle, rgb(0, 100, 255) 0%, transparent 70%);"
+    >
+    </div><div
+      class="absolute top-20 right-[-200px] w-[1400px] h-[1000px] rounded-full opacity-25 blur-[300px]"
+      style="background: radial-gradient(circle, rgb(0, 100, 255) 0%, transparent 70%);"
+    >
+    </div><div
+      class="absolute top-40 left-[-300px] w-[1000px] h-[800px] rounded-full opacity-15 blur-[250px]"
+      style="background: radial-gradient(circle, rgb(253, 255, 168) 0%, transparent 70%);"
+    >
+    </div><div
+      class="absolute bottom-[-300px] left-1/3 w-[1200px] h-[900px] rounded-full opacity-20 blur-[400px]"
+      style="background: radial-gradient(circle, rgb(0, 100, 255) 0%, transparent 70%);"
+    >
+    </div><div
+      class="absolute top-60 right-40 w-[600px] h-[600px] rounded-full opacity-12 blur-[200px]"
+      style="background: radial-gradient(circle, rgb(253, 255, 168) 0%, transparent 70%);"
+    >
+    </div>
+  </div>
+
+  <div
+    class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/80 to-transparent pointer-events-none z-20"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-top from-[#0a1628] via-[#0a1628]/80 to-transparent pointer-events-none z-20"
+  >
+  </div>
+  <div
+    class="lg:space-y-24 lg:h-[80vh] max-w-7xl mx-auto px-6 relative z-10 gap-10"
+  >
+    <h1
+      class="text-white text-3xl md:text-5xl lg:text-8xl text-center leading-tight"
+    >
+      Платите не за <span class="gradient-text">скидки</span> , а за <span
+        class="gradient-text"
+      >
+        реальные результаты</span
+      >
+    </h1>
+
+    <div class="grid lg:grid-cols-2">
+      <p class="py-14">
+        Создавайте задания для посетителей — отзыв, визит, покупка, рекомендация
+        — и получайте лояльную аудиторию, которая тратит баллы в вашем бизнесе.
+        <br />
+        <br />
+        Создавайте маркетинговые квесты для клиентов и платите только за действия,
+        которые развивают ваш бизнес: отзывы, рекомендации, пробу новых продуктов.
+      </p>
+      <HeroJourney />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+<svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M 50 280 Q 200 150 350 40" stroke="url(#pathGradient)" stroke-width="4" stroke-dasharray="8 8" stroke-linecap="round" class="animate-dash">
+	</path>
+	<defs>
+		<linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="#0064FF" stop-opacity="0.6">
+			</stop>
+			<stop offset="100%" stop-color="#FDFFA8" stop-opacity="0.8">
+			</stop>
+		</linearGradient>
+	</defs>
+	<polygon points="350,40 345,35 345,45" fill="#FDFFA8">
+	</polygon>
+</svg>

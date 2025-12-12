@@ -1,0 +1,26 @@
+---
+import QuestsCarousel from "./quests-carousel.astro";
+---
+
+<section id="quests" class="py-32 pt-20 bg-[#0a1628] relative overflow-hidden">
+  <div class="absolute inset-0 opacity-30">
+    <div
+      class="absolute top-20 left-20 w-96 h-96 rounded-full blur-[120px]"
+      style="background: radial-gradient(circle, rgb(0, 100, 255) 0%, transparent 70%);"
+    >
+    </div><div
+      class="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-[120px]"
+      style="background: radial-gradient(circle, rgb(0, 60, 159) 0%, transparent 70%);"
+    >
+    </div>
+  </div><div
+    class="absolute inset-0 opacity-[0.03]"
+    style="background-image: linear-gradient(rgb(0, 100, 255) 1px, transparent 1px), linear-gradient(90deg, rgb(0, 100, 255) 1px, transparent 1px); background-size: 50px 50px;"
+  >
+    <div
+      class="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/90 to-transparent pointer-events-none z-20"
+    >
+    </div>
+  </div>
+  <QuestsCarousel />
+</section>
