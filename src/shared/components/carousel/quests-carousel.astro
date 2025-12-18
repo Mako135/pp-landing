@@ -209,14 +209,15 @@ const quests = [
         </div>
       </div>
 
-      <div class="mt-8 flex items-center justify-center gap-2">
+      <!-- Dot индикаторы -->
+      <div class="mt-10 flex justify-center gap-2">
         {
-          quests.map((_, index) => (
+          quests.map((quest, index) => (
             <button
               type="button"
-              class="carousel-dot"
+              class="carousel-dot shrink-0 w-6 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300 cursor-pointer"
               data-embla-dot={index}
-              aria-label={`Показать слайд ${index + 1}`}
+              aria-label={`Перейти к слайду ${index + 1}`}
             />
           ))
         }
@@ -246,11 +247,11 @@ const quests = [
 
         const prev = carousel.querySelector("[data-embla-prev]");
         const next = carousel.querySelector("[data-embla-next]");
-        const dots = Array.from(carousel.querySelectorAll("[data-embla-dot]"));
+        const dotButtons = Array.from(carousel.querySelectorAll("[data-embla-dot]"));
 
         const setSelectedDot = () => {
           const selectedIndex = embla.selectedScrollSnap();
-          dots.forEach((dot, index) => {
+          dotButtons.forEach((dot, index) => {
             dot.classList.toggle(
               "carousel-dot--active",
               index === selectedIndex
@@ -261,7 +262,7 @@ const quests = [
         prev?.addEventListener("click", () => embla.scrollPrev());
         next?.addEventListener("click", () => embla.scrollNext());
 
-        dots.forEach((dot, index) => {
+        dotButtons.forEach((dot, index) => {
           dot.addEventListener("click", () => embla.scrollTo(index));
         });
 
@@ -271,3 +272,11 @@ const quests = [
     });
   }
 </script>
+
+<style>
+  .carousel-dot--active {
+    @apply bg-[#0064FF];
+    width: 3rem;
+    box-shadow: 0 0 12px rgba(0, 100, 255, 0.6);
+  }
+</style>

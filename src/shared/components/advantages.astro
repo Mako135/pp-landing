@@ -1,41 +1,31 @@
+---
+import mobileImage from "@assets/app.png";
+---
+
 <section
   id="advantages"
-  class="py-32 pt-16 bg-[#0a1628] relative overflow-hidden"
+  class="pb-8 pt-16 bg-[#0a1628] relative overflow-hidden lg:pb-0"
 >
   <div
-    class="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-[#0a1628] via-[#0a1628]/90 to-transparent pointer-events-none z-30"
+    class="absolute top-0 left-0 right-0 h-64 bg-linear-to-b from-[#0a1628] via-[#0a1628]/90 to-transparent pointer-events-none z-30"
   >
   </div><div class="absolute inset-0 opacity-30">
     <div
       class="absolute top-20 left-20 w-96 h-96 rounded-full blur-[120px]"
-      style="background: radial-gradient(circle, rgb(0, 100, 255) 0%, transparent 70%);"
+      style="background: radial-linear(circle, rgb(0, 100, 255) 0%, transparent 70%);"
     >
     </div><div
       class="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-[120px]"
-      style="background: radial-gradient(circle, rgb(0, 60, 159) 0%, transparent 70%);"
+      style="background: radial-linear(circle, rgb(0, 60, 159) 0%, transparent 70%);"
     >
     </div>
   </div><div
     class="absolute inset-0 opacity-[0.03]"
-    style="background-image: linear-gradient(rgb(0, 100, 255) 1px, transparent 1px), linear-gradient(90deg, rgb(0, 100, 255) 1px, transparent 1px); background-size: 50px 50px;"
+    style="background-image: linear-linear(rgb(0, 100, 255) 1px, transparent 1px), linear-linear(90deg, rgb(0, 100, 255) 1px, transparent 1px); background-size: 50px 50px;"
   >
-  </div><div class="max-w-7xl mx-auto px-4 relative z-50">
-    <div class="text-center mb-20">
-      <h2 class="text-[56px] mb-6">
-        <span class="text-white">Все в </span><span
-          class="bg-linear-to-r from-[#0064FF] to-[#00a3ff] bg-clip-text text-transparent"
-          >плюсе</span
-        >
-      </h2><p
-        class="text-gray-400 max-w-4xl mx-auto leading-relaxed"
-      >
-        Ваша аудитория мотивирована приходить чаще, пробовать новинки, оставлять
-        отзывы и приводить друзей — потому что каждый выполннный квест приносит
-        реальные бонусы. А ваш бизнес получает поток живых клиентов, измеримые
-        действия и рост продаж без скидок и лишних рекламных затрат.
-      </p>
-    </div><div class="relative">
-      <div class="absolute inset-0 pointer-events-none" style="z-index: 20;">
+  </div>
+  <div class="max-w-7xl mx-auto px-4 relative z-50 grid lg:grid-cols-2 gap-12">
+     <div class="absolute inset-0 pointer-events-none" style="z-index: 20;">
         <div
           class="absolute animate-float-up opacity-0"
           style="left: 22.1175%; bottom: -20px; animation-delay: 0.232004s; animation-duration: 6.58109s;"
@@ -661,34 +651,36 @@
               y1="11"
               y2="11"></line></svg
           >
-        </div><div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 lg:rotate-0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-arrow-right w-12 h-12 text-[#0064FF] animate-pulse opacity-30"
-            aria-hidden="true"
-            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
-          >
         </div>
-      </div><div
-        class="grid lg:grid-cols-2 gap-6 relative"
+      </div>
+
+    <div class="relative hidden lg:flex">  
+      <img src={mobileImage.src} alt="">
+    </div>
+    <div>
+      <div class="mb-20">
+      <h2 class="mb-6 text-left!">
+        <span class="text-white">Все в </span><span
+          class="bg-linear-to-r from-[#0064FF] to-[#00a3ff] bg-clip-text text-transparent"
+          >плюсе</span
+        >
+      </h2><p class="text-gray-400 max-w-4xl mx-auto leading-relaxed">
+        Ваша аудитория мотивирована приходить чаще, пробовать новинки, оставлять
+        отзывы и приводить друзей — потому что каждый выполннный квест приносит
+        реальные бонусы. А ваш бизнес получает поток живых клиентов, измеримые
+        действия и рост продаж без скидок и лишних рекламных затрат.
+      </p>
+    </div>
+     <div
+        class="grid gap-6 relative"
         style="z-index: 10;"
       >
         <div
-          class="group relative p-12 rounded-[24px] bg-white/5 backdrop-blur-xl border border-white/10 hover:border-[#0064FF]/50 transition-all hover:shadow-[0_0_40px_rgba(0,100,255,0.3)]"
+          class="group relative p-4 lg:px-12 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-[#0064FF]/50 transition-all hover:shadow-[0_0_40px_rgba(0,100,255,0.3)] w-fit"
         >
-          <div class="relative z-10">
+          <div class="relative z-10 flex items-center gap-5">
             <div
-              class="w-20 h-20 rounded-xl bg-gradient-to-br from-[#0064FF] to-[#003C9F] flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(0,100,255,0.4)]"
+              class="w-20 h-20 rounded-xl bg-linear-to-br from-[#0064FF] to-[#003C9F] flex items-center justify-center shadow-[0_0_20px_rgba(0,100,255,0.4)] flex-shrink-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -706,16 +698,17 @@
                   d="M18.09 10.37A6 6 0 1 1 10.34 18"></path><path d="M7 6h1v4"
                 ></path><path d="m16.71 13.88.7.71-2.82 2.82"></path></svg
               >
-            </div><h3 class="text-[32px] text-white">
+            </div><h3 class="text-2xl text-white">
               Пользователь имеет баллы
             </h3>
           </div>
-        </div><div
-          class="group relative p-12 rounded-[24px] bg-white/5 backdrop-blur-xl border border-white/10 hover:border-[#0064FF]/50 transition-all hover:shadow-[0_0_40px_rgba(0,100,255,0.3)]"
+        </div>
+        <div
+          class="group relative p-4 lg:px-12 py-4 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-[#0064FF]/50 transition-all hover:shadow-[0_0_40px_rgba(0,100,255,0.3)] w-fit ml-auto"
         >
-          <div class="relative z-10">
+           <div class="relative z-10 flex items-center gap-5">
             <div
-              class="w-20 h-20 rounded-xl bg-gradient-to-br from-[#0064FF] to-[#003C9F] flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(0,100,255,0.4)]"
+              class="w-20 h-20 rounded-xl bg-linear-to-br from-[#0064FF] to-[#003C9F] flex items-center justify-center shadow-[0_0_20px_rgba(0,100,255,0.4)] flex-shrink-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -733,14 +726,16 @@
                 ></path><path d="M13 17V5"></path><path d="M8 17v-3"
                 ></path></svg
               >
-            </div><h3 class="text-[32px] text-white">
+            </div><h3 class="text-2xl text-white">
               Бизнес получает клиентов
             </h3>
           </div>
-        </div>
       </div>
     </div>
-  </div><style>
+    </div>
+  </div>
+
+  <style>
     @keyframes float-up {
       0% {
         transform: translateY(0) scale(0);
@@ -761,7 +756,7 @@
       animation: float-up 4s ease-in-out infinite;
     }
   </style><div
-    class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/80 to-transparent pointer-events-none z-30"
+    class="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-[#0a1628] via-[#0a1628]/80 to-transparent pointer-events-none z-30"
   >
   </div>
 </section>
