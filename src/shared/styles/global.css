@@ -17,7 +17,7 @@ h2 {
 }
 
 p {
-  @apply text-xl text-white/80;
+  @apply text-base text-white/80;
 }
 
 .gradient-text {

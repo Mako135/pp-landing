@@ -1,77 +1,77 @@
 ---
 const quests = [
-  {
-    title: "Отзыв с фото",
-    description: "Развернутый отзыв + фотография",
-    reward: "50–200₸",
-    icon: "chat",
-  },
-  {
-    title: "Приведи друга",
-    description: "Рекомендует знакомому → он делает покупку",
-    reward: "200–500₸",
-    icon: "users",
-  },
-  {
-    title: "Попробуй новинку",
-    description: "Пробует новый продукт или услугу",
-    reward: "100–300₸",
-    icon: "star",
-  },
-  {
-    title: "Оставь отзыв в приложении",
-    description: "Оцени покупку и напиши короткий комментарий в приложении.",
-    reward: "30–150₸",
-    icon: "chat",
-  },
-  {
-    title: "Поделись в соцсетях",
-    description: "Поделись своим опытом и отметь бренд в соцсетях.",
-    reward: "80–250₸",
-    icon: "star",
-  },
-  {
-    title: "Подпишись на рассылку",
-    description: "Оформляет подписку на новости и спецпредложения.",
-    reward: "20–100₸",
-    icon: "users",
-  },
-  {
-    title: "Заполни анкету",
-    description: "Отвечает на несколько вопросов о предпочтениях.",
-    reward: "50–180₸",
-    icon: "chat",
-  },
-  {
-    title: "Участвуй в опросе",
-    description: "Проходит короткий опрос после посещения точки.",
-    reward: "40–160₸",
-    icon: "star",
-  },
-  {
-    title: "Сделай повторную покупку",
-    description: "Возвращается и покупает товар ещё раз.",
-    reward: "150–400₸",
-    icon: "users",
-  },
-  {
-    title: "Приведи коллегу",
-    description: "Рекомендует продукт коллеге по работе.",
-    reward: "200–500₸",
-    icon: "users",
-  },
-  {
-    title: "Оставь видеоотзыв",
-    description: "Записывает короткое видео о своём опыте.",
-    reward: "150–350₸",
-    icon: "star",
-  },
-  {
-    title: "Протестируй новую функцию",
-    description: "Пробует экспериментальную функцию и делится фидбеком.",
-    reward: "120–300₸",
-    icon: "chat",
-  },
+	{
+		title: "Отзыв с фото",
+		description: "Развернутый отзыв + фотография",
+		reward: "50–200₸",
+		icon: "chat",
+	},
+	{
+		title: "Приведи друга",
+		description: "Рекомендует знакомому → он делает покупку",
+		reward: "200–500₸",
+		icon: "users",
+	},
+	{
+		title: "Попробуй новинку",
+		description: "Пробует новый продукт или услугу",
+		reward: "100–300₸",
+		icon: "star",
+	},
+	{
+		title: "Оставь отзыв в приложении",
+		description: "Оцени покупку и напиши короткий комментарий в приложении.",
+		reward: "30–150₸",
+		icon: "chat",
+	},
+	{
+		title: "Поделись в соцсетях",
+		description: "Поделись своим опытом и отметь бренд в соцсетях.",
+		reward: "80–250₸",
+		icon: "star",
+	},
+	{
+		title: "Подпишись на рассылку",
+		description: "Оформляет подписку на новости и спецпредложения.",
+		reward: "20–100₸",
+		icon: "users",
+	},
+	{
+		title: "Заполни анкету",
+		description: "Отвечает на несколько вопросов о предпочтениях.",
+		reward: "50–180₸",
+		icon: "chat",
+	},
+	{
+		title: "Участвуй в опросе",
+		description: "Проходит короткий опрос после посещения точки.",
+		reward: "40–160₸",
+		icon: "star",
+	},
+	{
+		title: "Сделай повторную покупку",
+		description: "Возвращается и покупает товар ещё раз.",
+		reward: "150–400₸",
+		icon: "users",
+	},
+	{
+		title: "Приведи коллегу",
+		description: "Рекомендует продукт коллеге по работе.",
+		reward: "200–500₸",
+		icon: "users",
+	},
+	{
+		title: "Оставь видеоотзыв",
+		description: "Записывает короткое видео о своём опыте.",
+		reward: "150–350₸",
+		icon: "star",
+	},
+	{
+		title: "Протестируй новую функцию",
+		description: "Пробует экспериментальную функцию и делится фидбеком.",
+		reward: "120–300₸",
+		icon: "chat",
+	},
 ];
 ---
 
@@ -191,13 +191,13 @@ const quests = [
                     <h3 class="text-xl sm:text-2xl text-white font-medium">
                       {quest.title}
                     </h3>
-                    <p class="text-sm sm:text-base text-white/70 leading-relaxed">
+                    <p class="text-white/70 leading-relaxed">
                       {quest.description}
                     </p>
                   </div>
                 </div>
 
-                <div class="mt-6 flex items-baseline gap-2 text-sm sm:text-base">
+                <div class="mt-6 flex items-baseline gap-2">
                   <span class="text-white/60">Награда:</span>
                   <span class="text-[#0064FF] text-lg font-medium">
                     {quest.reward}
